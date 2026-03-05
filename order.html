@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="/home/luan/Desktop/T3/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	
+</head>
+
+<body>
+	<header>
+		<div id="titleBox">
+			<a id="title">Boland Heuning</a>
+		</div>
+		<div id="linkBox">
+			<a href="index.html">Tuisblad</a>
+			<a href="contact.html">Kontak Ons</a>
+		</div>
+	</header>
+	<main id="shell-main">
+		<div id="shell-left">
+			<div class="form-intro">
+				<h1>Bestellings</h1>
+				<p>Voltooi asseblief U besonderhede hieronder.</p>
+			</div>
+			<form style="width: 70%;">
+				<fieldset>
+					<legend>Kies jou heuning:</legend>
+					<input class="checkbox" type="radio" name="honey-choice" required>
+					<label for="honey-choice">Vars Oes</label>
+					<input class="checkbox" type="radio" name="honey-choice">
+					<label for="honey-choice">Volryp</label>
+				</fieldset>
+				<fieldset>
+					<legend>Grootte:</legend>
+					<input class="checkbox" type="radio" name="honey-size" required>
+					<label>350g</label>
+					<input class="checkbox" type="radio" name="honey-size">
+					<label>500g</label>
+					<input class="checkbox" type="radio" name="honey-size">
+					<label>1kg</label>
+				</fieldset>
+				<fieldset>
+					<legend>Aantal:</legend>
+					<input class="entry-edit" style="grid-column: span 2;" type="number" required>
+				</fieldset>
+				<fieldset class="grid-form" style="margin-top: 0;">
+					<legend>Jou besonderhede:</legend>
+					<input class="entry-edit" type="text" placeholder="Naam" name="firstname" required>
+					<input class="entry-edit" type="text" placeholder="Van" name="surname" required>
+			    		<input class="entry-edit" type="email" placeholder="Epos" name="email">
+			    		<input class="entry-edit" type="phone" placeholder="Kontak nommer" name="phone" required>
+					<textarea class="grid-form-tall grid-form-wide entry-edit" name="message" placeholder="Spesiale versoeke..."></textarea>
+			    		<button class="submit grid-form-wide" type="submit">Plaas bestelling</button>
+				</fieldset>
+			</form>
+
+		</div>
+		<div id="shell-right">
+			<img id="temp" src="/home/luan/Desktop/T3/contact2.png">
+		</div>
+	</main>
+	
+	<footer>
+		<div class="footer-shell">
+			<div class="footer-boxes"><p class="foot">... net heuning</p></div>
+			<div class="footer-boxes">
+				<p class="foot">074 644 6894<br>bolandheuning@outlook.com</p>
+				<div id="icon-align">
+					<a href="https://facebook.com/yourpage" target="_blank">
+    					<i class="fa-brands fa-facebook"></i>
+    					</a>
+		    			<a href="https://instagram.com/yourpage" target="_blank">
+					<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="footer-boxes"><p class="foot">&copy; Boland Heuning 2026</p></div>
+		</div>
+	</footer>
+</body>
+
+</html>

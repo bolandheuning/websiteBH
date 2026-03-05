@@ -1,0 +1,350 @@
+:root {
+    --headHeight: 160px;
+}
+body{
+	background-color: #f8f5eb;
+	margin: 0;	
+}
+header{
+	/*border-bottom: 1px solid black;*/
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	background-color: #f8f5eb;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: var(--headHeight);
+	z-index: 10;
+	   
+	display: flex;
+	align-items: center;
+}
+#linkBox{
+	width: 15vw;
+	margin-left:20vw;
+	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+}
+#titleBox{
+	width: 24vw;
+	margin-left:38vw;
+	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	white-space: nowrap;
+}
+#title{
+	font-size: 50px;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-family: 'Cinzel', serif;
+}
+main{
+	position: relative;
+	margin-top: var(--headHeight); /* prevents content hiding behind header */
+}
+#heroImg{
+	position: relative;
+	top: 0;
+	width: 100vw;
+}
+#storyBox{
+	margin-left: 22vw;
+	margin-top: 14vh;
+	width: 45vw;
+}
+#product-section{
+	margin-top: 14vh;
+	border: 1px solid black;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.honey-card{
+	position: relative;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	width: 300px;
+	/*border: 1px solid black;*/
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	
+	
+	/*flex: 0 0 10vw;          /* grow | shrink | minimum width */
+    	/*min-width: 250px;         /* prevents getting too small */
+}
+h1{
+	font-family: 'Cinzel', serif;
+	font-size: 36px;
+	font-weight: 100;
+	margin-bottom:0;
+}
+p{
+	margin-top: 0;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 28px;
+	font-weight: 100;  
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+
+footer{
+	margin-top: 0vh;
+	border-top: 1px solid rgba(0,0,0,0.05);
+	background-color: #f1ead9; /*	#f1ead9,#e4dcc6,#ebe3cf,*/
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+.footer-shell{
+	margin-top: 5vh;
+	width: 20vw;
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer-boxes{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.foot{
+	font-size: 14px;
+	text-align: center;
+}
+#icon-align{
+	margin-top: -5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+.fa-brands {
+    font-size: 20px;
+    color: #4a463d;
+}
+.order-button{
+	font-size: 20px;
+	height: 35px;
+	width: 50%;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 7px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 0.95rem;
+	background-color: #6b7a3a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.order-button:hover{
+	border: 1px solid rgba(0,0,0,0.8);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.description{ font-size: 0.95rem; color: #5a4d2b; margin: 0 0 8px; }
+/*--------------------------------Contact Page--------------------------------*/
+#shell-main{
+	display: flex;
+	align-items: center;
+}
+#shell-left{
+	width: 55%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#shell-right{
+	width: 45%;
+	height: 80vh;
+}
+#temp{
+	width: 100%;
+	height: 100%;
+}
+.form-intro{
+	margin-top: 4rem;
+	width: 70%;
+}
+.grid-form{
+	margin-top: 2rem;
+	/*margin: 0 auto;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	/*width: 70%;*/
+	box-sizing: border-box;
+	
+}
+.entry-edit{
+	font-size: 20px;
+	height: 40px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 7px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 0.95rem;
+	background-color: #f8f5eb;
+}
+.entry-edit:hover{
+	border: 1px solid rgba(0,0,0,0.8);
+}
+.entry-edit:focus{
+	border: 1px solid rgba(0,0,0,0.8);
+	background-color: #f1ead9; 
+	outline: none;
+}
+.submit{
+	font-size: 20px;
+	height: 40px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 7px;
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 0.95rem;
+	background-color: #6b7a3a;
+}
+.submit:hover{
+	border: 1px solid rgba(0,0,0,0.8);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.submit:focus{
+	border: 1px solid rgba(0,0,0,0.8);
+	background-color: #f1ead9; 
+	outline: none;
+}
+.grid-form-wide{
+	grid-column: span 2;
+}
+.grid-form-tall{
+	height: 80px;
+}
+textarea{
+	resize: none;
+}
+
+/*--------------------------------Tools--------------------------------*/
+.border{
+	border: 1px solid black;
+}
+
+/*--------------------------------Universal--------------------------------*/
+.icon:hover{
+	color: #f8f5eb;
+	transition: background-color 0.3s;
+}	/*Not yet used*/
+
+/*--------------------------------Experimental--------------------------------*/
+.product-card {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+
+.product-card img {
+  width: 100%;
+}
+
+/* --- Overlay (Hidden by Default) --- */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(248,245,235,0.95);
+  color: #5a4d2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none; /* overlay doesn’t block clicks */
+}
+
+/* --- Desktop Hover --- */
+.product-card label:hover .overlay {
+  opacity: 1;
+}
+
+.honey-card .overlay-zone:hover .overlay{
+	opacity: 1;
+}
+
+
+/* --- Info Section --- */
+.info {
+  padding: 15px;
+}
+
+.info h3 { margin: 0 0 5px; font-size: 1.3rem; }
+.info .tagline { font-size: 0.95rem; color: #5a4d2b; margin: 0 0 8px; }
+.info .price { font-weight: bold; margin: 0 0 10px; }
+
+.order-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #5a4d2b;
+  color: #f8f5eb;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.order-btn:hover { background-color: #7a6b4c; }
+
+/* --- Mobile: Tap to Reveal using Checkbox Hack --- */
+.toggle {
+  display: none; /* hide the checkbox */
+}
+
+.toggle:checked + label .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .product-card label:hover .overlay {
+    opacity: 0; /* disable hover on mobile */
+  }
+}
+
+/*--------------------------------Order Form--------------------------------*/
+fieldset{
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	border: none;
+}
+legend{
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: 20px;
+	font-weight: 100;  
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+label{
+	font-family: 'Source Sans 3', sans-serif;
+	font-weight: 100;  
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	font-size: 0.95rem;
+}
+.checkbox{
+	accent-color: #6b7a3a;   /* your colour */
+}
